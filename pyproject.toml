@@ -16,7 +16,12 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["angr_mcp"]
+packages = [
+    "angr_mcp",
+    "angr_mcp.server",
+    "angr_mcp.server.taint_engine",
+    "angr_mcp.utils",
+]
 
 [tool.uv]
 package = true
